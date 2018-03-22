@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝搜索框</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+		.search{
+			width: 630px;
+			margin:100px auto;
+			position:relative;
+		}
+		.category{
+			padding-left: 20px;
+		}
+		.category a{
+			color: #ff4400;
+			font-size: 12px;
+		}
+		.category .active{
+			background-image: linear-gradient(to right, #ff8f00, #ff5100); 
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+		.category .active a{
+			color:#fff;
+		}
+		.category li{
+			width:36px;
+			margin-right: 4px;
+			text-align: center;
+			float: left;
+			padding:6px 0 4px 0;
+		}
+		.category li:hover{
+			background-color: #ffeee5;
+		}
+		.search-box{
+			border: #ff5000 2px solid;
+		    border-right: none;
+		    border-top-left-radius: 25px;
+		    border-bottom-left-radius: 25px;
+		    height: 40px;
+		    box-sizing: border-box;
+		    float: left;
+		}
+		.search-box input{
+		    -webkit-appearance: none;
+		    outline: none;
+		    width: 470px;
+		    height: 24px;
+		    padding: 6px 0;
+		    border: none;
+		    border-top-left-radius: 25px;
+		    border-bottom-left-radius: 25px;
+		    text-indent: 10px;
+		    float: left;
+		    font-size: 12px;
+		}
+		.camera{
+			display:inline-block;
+			width:84px;
+			height: 36px;
+			background:url('images/camera.png') no-repeat 43px 6px;
+		    background-size: 24px 24px;
+		    float: left;
+		}
+		.search-btn{
+			display: inline-block;
+			width: 74px;
+			border-top-right-radius: 25px;
+		    border-bottom-right-radius: 25px;
+		    background-image: linear-gradient(to right, #ff8f00, #ff5100); 
+		    color: #fff;
+		    float: left;
+		    line-height: 40px;
+		    text-align: center;
+		}
+		.search-list{
+			position:absolute;
+			width:556px;
+			background-color: #fff;
+			border: 1px solid #bebebe;
+			top:66px;
+			box-sizing: border-box;
+			padding: 0 5px;
+		}
+		.search-list li{
+			line-height: 26px;
+		}
+		.search-list a{
+			color: #333;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="search clearfix">
+		<div class="category">
+			<ul class="clearfix">
+				<li class="active"><a href="#">宝贝</a></li>
+				<li><a href="#">天猫</a></li>
+				<li><a href="#">店铺</a></li>
+			</ul>
+		</div>
+		<div class="search-box clearfix">
+			<input type="text" name="" placeholder="春装2018新款">
+			<em class="camera"></em>
+		</div>
+		<span class="search-btn">搜索</span>
+		<div class="search-list">
+			<ul>
+				<li><a href="javaScript:;">春装女2018春</a></li>
+				<li><a href="javaScript:;">春装服装女 春秋</a></li>
+				<li><a href="javaScript:;">春装服装女 春秋</a></li>
+				<li><a href="javaScript:;">春装25-30岁女</a></li>
+				<li><a href="javaScript:;">春装加大码</a></li>
+				<li><a href="javaScript:;">春装2018新款</a></li>
+				<li><a href="javaScript:;">春装服装女 春秋</a></li>
+				<li><a href="javaScript:;">春装25-30岁女</a></li>
+				<li><a href="javaScript:;">春装加大码</a></li>
+				<li><a href="javaScript:;">春装2018新款</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
